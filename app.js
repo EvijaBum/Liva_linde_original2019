@@ -3,9 +3,8 @@ var express             = require("express"),
     bodyParser          = require("body-parser"),
     exphbs              = require("express-handlebars"),
     flash               = require("connect-flash"),
-    session             = require('express-session');
-
-const port = 3000;
+    session             = require('express-session'),
+    cookieParser        = require('cookie-parser');
 
 
 var indexRoutes = require("./routes/index");
@@ -13,13 +12,22 @@ var indexRoutes = require("./routes/index");
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(flash());
-app.use(session({ secret: '123' }));
+
+app.use(cookieParser());
+app.use(flash({ locals: 'flash' }));
+
+
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}))
 
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 app.set("view engine", "ejs");
-
+app.set('trust proxy', 1) // trust first proxy
 
 app.use(express.static("public"));
 
@@ -35,4 +43,9 @@ app.use(function(req, res, next){
 
 app.use("/", indexRoutes);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+
+
+app.listen(3000, function(){
+   console.log("server started");
+});
