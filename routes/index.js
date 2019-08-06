@@ -7,7 +7,7 @@ var express             = require("express"),
 
 //LANDING PAGE
     router.get("/", function(req, res){
-        res.render("landing");
+        res.render("index");
     });
 
 // ABOUT SECTION
@@ -23,6 +23,7 @@ var express             = require("express"),
         router.get("/kidsevents", function(req, res){
             res.render("kidsevents"); 
         })
+
     // lifestyle - events
         router.get("/lifestyle", function(req, res){
         res.render("lifestyle"); 
