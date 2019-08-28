@@ -7,7 +7,7 @@ var express             = require("express"),
 
 //LANDING PAGE
     router.get("/", function(req, res){
-        res.render("index");
+        res.render("landing");
     });
 
 // ABOUT SECTION
