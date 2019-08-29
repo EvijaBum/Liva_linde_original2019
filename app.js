@@ -45,6 +45,10 @@ app.use(function(req, res, next){
 
 app.use("/", indexRoutes);
 
-app.listen(3000, function(){
-   console.log("BUNNY JUMPS!");
+// app.listen(3000, function(){
+//    console.log("BUNNY JUMPS!");
+// });
+http.createServer(app).listen(app.get('port'),
+  function(){
+    console.log("Express server listening on port " + app.get('port'));
 });
