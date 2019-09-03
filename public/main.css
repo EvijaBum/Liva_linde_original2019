@@ -134,13 +134,18 @@
       flex-direction:column;
       align-items: center;
       color: white;
-      flex: 2 2 200px;
+      word-spacing: 7px;
     }
     .home h1{
       font-family: 'Simonetta', cursive;
       font-size: 55px;
       font-weight: normal;
       opacity: 0.9;
+     }
+     hr {
+       padding: 0;
+       margin: 0;
+       width: 250px;
      }
     .home p{
       font-family: 'Simonetta', cursive;
@@ -220,8 +225,8 @@
   .pads{
     justify-content:space-between;
     flex: 1 2 250px;
-	  height: 300px;
-    margin: 15px;
+	  height: 220px;
+    margin: 10px;
      font-size: 15px;
     font-family: Arial,sans-serif;
     text-align: left;
@@ -229,7 +234,7 @@
     font-weight: 500;
   }
     .pads p{
-       line-height: 24px;
+       line-height: 22px;
     }
     
   .caps{
@@ -238,7 +243,7 @@
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-height 100px;
+    height 100px;
 	  /* background-color: yellow; */
   }
  
@@ -253,7 +258,6 @@ height 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-align-items: flex-end;
      width: 100%;
   }
   
@@ -395,7 +399,7 @@ align-items: flex-end;
         display: block;
         max-height: 350px;
         width:400px;
-        align-self: center;
+        /* align-self: center; */
         transition: transform .3s;
     }
     
@@ -411,7 +415,7 @@ align-items: flex-end;
         font-family: Arial, sans-serif;
       }
       
-      .images h2 {
+      .images h3 {
         font-size: 16px;
         border: 1px solid rgba(115, 115, 115, 0.4);
         border-radius: 4px;
@@ -421,9 +425,10 @@ align-items: flex-end;
       .galleries a, .mainpanel a{
         text-decoration: none !important;
         color: black;
+    ;
       }
       .images, .imageslayout{
-        padding: 5px;
+        padding: 2px;
       }
  
       .social2{
@@ -457,7 +462,7 @@ align-items: flex-end;
       
     /* ======================== EVENTS - KIDS ================= */
     
-    .sectionkids, .wedding {
+    .sectionkids, .wedding, .people {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
@@ -723,7 +728,6 @@ align-items: flex-end;
   /*==========================Contact section ========================================*/
 
   body.contact{
-      font-family: Arial, sans-serif;
       background: url(contact.jpg);
       background-repeat:no-repeat;
       background-size: cover;
@@ -759,20 +763,18 @@ align-items: flex-end;
           display: flex;
           flex:1 1 140px;
           flex-direction: row;
-          font-family: Arial,sans-serif;
-          width:600px;
-          /* margin: 20px; */
-          height: 100px;
+          font-family: 'Simonetta', cursive;
+          width:400px;
+           height: 100px;
         }
 
       #paragraph p{
-          align-self: center;
-          text-align: center;
-          /* padding: 20px; */
-          font-size: 16px;
-		line-height: 22px;
-          color: black;
-          opacity: 0.7;
+         text-align: justify;
+          font-size: 18px;
+		      line-height: 24px;
+          color: 
+          #1a1a1a;
+          /* background-color: yellow; */
         }
 
   /*==========CONTACT FORM==============*/

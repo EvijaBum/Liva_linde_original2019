@@ -35,9 +35,13 @@ var express             = require("express"),
         });
 
     // Travel - nature
-        router.get("/travelnature", function(req, res){
-        res.render("travelnature"); 
+        router.get("/landscapes", function(req, res){
+        res.render("landscapes"); 
         });
+    // Portraits
+    router.get("/people", function(req, res){
+        res.render("people"); 
+    });
 
 
     // travel - cities
@@ -45,11 +49,7 @@ var express             = require("express"),
             res.render("travelcities"); 
         });
 
-    // Portraits
-        router.get("/portraits", function(req, res){
-            res.render("portraits"); 
-        });
-    
+
     // Sport
         router.get("/sport", function(req, res){
             res.render("sport"); 
