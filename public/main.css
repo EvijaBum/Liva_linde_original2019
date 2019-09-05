@@ -236,11 +236,6 @@
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-<<<<<<< HEAD
-=======
-height 100px;
-	  /* background-color: yellow; */
->>>>>>> parent of c880c1c... add contact section and people gallery
   }
  
   @keyframes fadein{
@@ -456,13 +451,9 @@ align-items: flex-end;
         }
       }
       
-    /* ======================== EVENTS - KIDS ================= */
+    /* ======================== EVENTS  ================= */
     
-<<<<<<< HEAD
-    .sectionkids, .wedding, .people, .sectionportraits {
-=======
-    .sectionkids, .wedding {
->>>>>>> parent of c880c1c... add contact section and people gallery
+    .sectionkids, .sectionwedding, .sectionpeople, .sectionportraits, .sectionlandscapes {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
