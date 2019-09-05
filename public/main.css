@@ -133,18 +133,13 @@
       flex-direction:column;
       align-items: center;
       color: white;
-      word-spacing: 7px;
+      flex: 2 2 200px;
     }
     .home h1{
       font-family: 'Simonetta', cursive;
       font-size: 55px;
       font-weight: normal;
       opacity: 0.9;
-     }
-     hr {
-       padding: 0;
-       margin: 0;
-       width: 250px;
      }
     .home p{
       font-family: 'Simonetta', cursive;
@@ -209,10 +204,9 @@
     }
   }
 
- /*================================================================*/
- /* Page About me */
- 
+ /*============================  Page About me ====================================*/
 
+ 
   @keyframes fadein{
     100%{
       opacity: 1;
@@ -241,7 +235,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    /*border-top: 1px white solid;*/
     border-radius: 4px;
     border-right: 1px white solid;
      border-bottom: 1px white solid;
@@ -251,8 +244,8 @@
   .pads{
     justify-content:space-between;
     flex: 1 2 250px;
-	  height: 220px;
-    margin: 10px;
+	  height: 300px;
+    margin: 15px;
      font-size: 15px;
     font-family: Arial,sans-serif;
     text-align: left;
@@ -260,7 +253,7 @@
     font-weight: 500;
   }
     .pads p{
-       line-height: 22px;
+       line-height: 24px;
     }
     
   .caps{
@@ -282,6 +275,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+align-items: flex-end;
      width: 100%;
   }
   
@@ -300,6 +294,7 @@
  
  
    
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
     .about{
      background-size: cover;
@@ -337,6 +332,45 @@
     
   }
   
+=======
+        @media only screen and (max-width: 600px) {
+            .about{
+            background-size: cover;
+            flex-basis: 100%;
+            
+            }
+            .aboutsection{
+              height: auto;
+            }
+              .education{
+                margin-top: 70px;
+                margin-top: 100px;
+                justify-content:center;
+              
+              }
+              .education li{
+                height:70px;
+                padding: 0 2px 2px 0;
+                font-size: 14px;
+            
+              }
+            .titleedu{
+              text-align: right;
+            }
+            .pads{
+              margin-top: 15px;
+              font-size: 15px;
+              font-family: Arial, sans-serif;
+              letter-spacing: 0.5px;
+              line-height: 22px;
+            }
+            .caps{
+              font-size: 18px;
+            }
+            
+          }
+          
+>>>>>>> 2694471
   @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -423,7 +457,7 @@
         display: block;
         max-height: 350px;
         width:400px;
-        /* align-self: center; */
+        align-self: center;
         transition: transform .3s;
     }
     
@@ -436,7 +470,15 @@
        position: relative;
         padding: 10px;
         width: auto;
+<<<<<<< HEAD
         font-size: 15px;
+=======
+        font-family: Arial, sans-serif;
+      }
+      
+      .images h2 {
+        font-size: 16px;
+>>>>>>> 2694471
         border: 1px solid rgba(115, 115, 115, 0.4);
         border-radius: 4px;
         color:  #1a1a1a;
@@ -467,10 +509,9 @@
       .galleries a, .mainpanel a{
         text-decoration: none !important;
         color: black;
-    ;
       }
       .images, .imageslayout{
-        padding: 2px;
+        padding: 5px;
       }
  
       .social2{
@@ -496,9 +537,15 @@
         }
       }
       
+<<<<<<< HEAD
     /* ======================== SECTIONS UNDER PORTFOLIO ================= */
     
     .sectionkids, .wedding, .people, .sectionportraits {
+=======
+    /* ======================== EVENTS  ================= */
+    
+    .sectionkids, .sectionwedding, .sectionpeople, .sectionportraits, .sectionlandscapes {
+>>>>>>> 2694471
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
@@ -765,6 +812,7 @@
   /*==========================Contact section ========================================*/
 
   body.contact{
+      font-family: Arial, sans-serif;
       background: url(contact.jpg);
       background-repeat:no-repeat;
       background-size: cover;
@@ -800,18 +848,20 @@
           display: flex;
           flex:1 1 140px;
           flex-direction: row;
-          font-family: 'Simonetta', cursive;
-          width:400px;
-           height: 100px;
+          font-family: Arial,sans-serif;
+          width:600px;
+          /* margin: 20px; */
+          height: 100px;
         }
 
       #paragraph p{
-         text-align: justify;
-          font-size: 18px;
-		      line-height: 24px;
-          color: 
-          #1a1a1a;
-          /* background-color: yellow; */
+          align-self: center;
+          text-align: center;
+          /* padding: 20px; */
+          font-size: 16px;
+		line-height: 22px;
+          color: black;
+          opacity: 0.7;
         }
 
   /*==========CONTACT FORM==============*/
@@ -860,8 +910,13 @@
         width:100px;
         margin:20px 0 0px 0;
         border-radius:3px;
+<<<<<<< HEAD
         transition: all 0.3s;
         transition: all 0.3s;
+=======
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+>>>>>>> 2694471
         transition: all 0.3s;
         text-align:center;
         font-size:0.6em;
@@ -975,7 +1030,8 @@
     padding-top: auto;
     display: flex;
     flex-wrap: wrap;
-	justify-content: flex-end;
+    justify-content: flex-end;
+    position: relative;
 	  align-items: center;
     flex-direction:column;
     background-color: transparent;
@@ -1000,8 +1056,8 @@
     }
   }
   
-  /*==========================================================*/
- /*SCROLLER */ 
+  /*========================= SCROLLER =================================*/
+
  
   /* width */
   ::-webkit-scrollbar {
