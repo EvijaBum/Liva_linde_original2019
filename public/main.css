@@ -498,7 +498,7 @@
       
     /* ======================== SECTIONS UNDER PORTFOLIO ================= */
     
-    .sectionkids, .wedding, .people, .portraits {
+    .sectionkids, .wedding, .people, .sectionportraits {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
