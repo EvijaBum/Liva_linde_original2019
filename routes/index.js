@@ -42,22 +42,10 @@ var express             = require("express"),
     router.get("/people", function(req, res){
         res.render("people"); 
     });
-<<<<<<< HEAD
     // Portraits
     router.get("/portraits", function(req, res){
         res.render("portraits"); 
     });
-=======
-     // Portraits
-     router.get("/portraits", function(req, res){
-        res.render("portraits"); 
-    });
-
-    // // travel - cities
-    //     router.get("/travelcities", function(req, res){
-    //         res.render("travelcities"); 
-    //     });
->>>>>>> 2694471
 
     // // Portraits
     //     router.get("/portraits", function(req, res){
@@ -74,11 +62,6 @@ var express             = require("express"),
     //         res.render("brands"); 
     //     });
         
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> 2694471
 
 // CONTACT SECTION
     router.get("/contact", function(req, res){
