@@ -38,11 +38,14 @@ var express             = require("express"),
         router.get("/landscapes", function(req, res){
         res.render("landscapes"); 
         });
-    // Portraits
+    // People
     router.get("/people", function(req, res){
         res.render("people"); 
     });
-
+    // Portraits
+    router.get("/portraits", function(req, res){
+        res.render("portraits"); 
+    });
 
     // travel - cities
         router.get("/travelcities", function(req, res){
@@ -60,10 +63,7 @@ var express             = require("express"),
             res.render("brands"); 
         });
         
-    // Photo sessions
-        router.get("/photosessions", function(req, res){
-            res.render("photosessions"); 
-        });
+
 
 // CONTACT SECTION
     router.get("/contact", function(req, res){

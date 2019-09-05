@@ -31,8 +31,7 @@
   .nav.navbar-nav li a:hover {
     border-bottom: 1px solid white;
     text-decoration:none;
-    color: #bee7f4;
-    opacity: 0.75;
+    color: rgb(255,239,157);
     
   }
   .nav.navbar-nav li a:focus{
@@ -95,7 +94,7 @@
 }
 
 .social-media::after {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 0 1px rgba(214, 201, 11, 0.363) inset;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
   z-index: -1;
@@ -152,12 +151,39 @@
       font-size: 27px;
       opacity: 0.9;
     }
+    .social-media:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);   
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
     
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+.galleries a, .mainpanel a{
+  text-decoration: none !important;
+  color: black;
+}
+.images, .imageslayout{
+  padding: 2px;
+}
     @media screen and (max-width: 600px){
     .social{
       margin-top:150px;
       flex-direction:column;
-      }
+      }  
       .home h1{
         font-size: 40px;
       }
@@ -243,8 +269,6 @@
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-    height 100px;
-	  /* background-color: yellow; */
   }
  
   @keyframes fadein{
@@ -286,8 +310,8 @@
        height: auto;
     }
       .education{
-         -webkit-margin-top: 70px;
-         -moz-margin-top: 100px;
+         margin-top: 70px;
+         margin-top: 100px;
         justify-content:center;
        
       }
@@ -361,7 +385,7 @@
   .mywork {
     background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
     min-height: 100vh;
-    padding-top: 110px;
+    padding-top: 80px;
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     }
@@ -383,7 +407,6 @@
     flex-direction: column;
     justify-content: center;
     width: auto;
-    padding-top: 20px;
   }
   
     .images img{
@@ -394,6 +417,7 @@
       display: flex;
       flex-wrap:wrap;
       justify-content:center;
+      padding-top: 20px;
     }
     .galleries div img {
         display: block;
@@ -412,16 +436,34 @@
        position: relative;
         padding: 10px;
         width: auto;
-        font-family: Arial, sans-serif;
-      }
-      
-      .images h3 {
-        font-size: 16px;
+        font-size: 15px;
         border: 1px solid rgba(115, 115, 115, 0.4);
         border-radius: 4px;
-        color: black;
+        color:  #1a1a1a;
+        font-family: "Simoneta", cursive;
       }
-    
+        .shorttext:hover {
+          background-color: rgba(255,239,157,0.2);
+          animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0, 0, 0);   
+        }
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+        
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+        
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
+          }
+        }
       .galleries a, .mainpanel a{
         text-decoration: none !important;
         color: black;
@@ -448,21 +490,15 @@
         max-height:230px;
         width: 250px;
       }
-      .mywork{
-        background: #F5F5F5;
-      }
+   
       .shorttext{
-        background-color: white;
-        opacity: 0.5;
-        color: black;
-        font-family: Arial, sans-serif;
-        font-size: 15px;
+        font-size: 12px;
         }
       }
       
-    /* ======================== EVENTS - KIDS ================= */
+    /* ======================== SECTIONS UNDER PORTFOLIO ================= */
     
-    .sectionkids, .wedding, .people {
+    .sectionkids, .wedding, .people, .portraits {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
@@ -481,11 +517,12 @@
                margin:10px 0 10px 8px;
                padding: 10px;
                color: white;
+               font-family: "Simoneta", cursive;
              }
              .btn.btn-basic:hover{
                 background-color: lightgrey;
                 opacity: 0.6;
-                color:black;
+                color:  #1a1a1a;
              }
              
       .mainpanel {
@@ -798,7 +835,7 @@
       }
     
       .form:hover{
-        border:1px solid #3399ff;
+        border:1px solid rgb(255,239,157);
       }
     
       .form:focus{
@@ -822,9 +859,9 @@
         display: block;
         width:100px;
         margin:20px 0 0px 0;
-        border-radius:3px;https://web.whatsapp.com/
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
+        border-radius:3px;
+        transition: all 0.3s;
+        transition: all 0.3s;
         transition: all 0.3s;
         text-align:center;
         font-size:0.6em;
@@ -863,7 +900,7 @@
       .form-btn:hover{
         background:#A5A5A5 ;
         color: #F4F4F4;
-        border:1px solid rgb(26, 117, 255);
+        border:1px solid rgb(255,239,157);
       }
     
       .form-btn:active{
