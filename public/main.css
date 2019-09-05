@@ -49,8 +49,7 @@
       opacity: 1;
     }
   }
-  
-/*social icons*/ 
+  /*social icons*/ 
   .social{
     display: flex;
     flex-direction: column;
@@ -94,7 +93,7 @@
 }
 
 .social-media::after {
-  box-shadow: 0 0 0 1 rgba(2, 2, 2, 0.6) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
   z-index: -1;
@@ -127,6 +126,8 @@
 .social-media.youtube::before {
   content: '\f16a';
 }
+
+
 
     .message{
       display: flex;
