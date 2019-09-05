@@ -134,18 +134,13 @@
       flex-direction:column;
       align-items: center;
       color: white;
-      word-spacing: 7px;
+      flex: 2 2 200px;
     }
     .home h1{
       font-family: 'Simonetta', cursive;
       font-size: 55px;
       font-weight: normal;
       opacity: 0.9;
-     }
-     hr {
-       padding: 0;
-       margin: 0;
-       width: 250px;
      }
     .home p{
       font-family: 'Simonetta', cursive;
@@ -183,10 +178,9 @@
     }
   }
 
- /*================================================================*/
- /* Page About me */
- 
+ /*============================  Page About me ====================================*/
 
+ 
   @keyframes fadein{
     100%{
       opacity: 1;
@@ -215,7 +209,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    /*border-top: 1px white solid;*/
     border-radius: 4px;
     border-right: 1px white solid;
      border-bottom: 1px white solid;
@@ -225,8 +218,8 @@
   .pads{
     justify-content:space-between;
     flex: 1 2 250px;
-	  height: 220px;
-    margin: 10px;
+	  height: 300px;
+    margin: 15px;
      font-size: 15px;
     font-family: Arial,sans-serif;
     text-align: left;
@@ -234,7 +227,7 @@
     font-weight: 500;
   }
     .pads p{
-       line-height: 22px;
+       line-height: 24px;
     }
     
   .caps{
@@ -243,8 +236,11 @@
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-    height 100px;
+<<<<<<< HEAD
+=======
+height 100px;
 	  /* background-color: yellow; */
+>>>>>>> parent of c880c1c... add contact section and people gallery
   }
  
   @keyframes fadein{
@@ -258,6 +254,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+align-items: flex-end;
      width: 100%;
   }
   
@@ -276,43 +273,43 @@
  
  
    
-@media only screen and (max-width: 600px) {
-    .about{
-     background-size: cover;
-      flex-basis: 100%;
-     
-    }
-    .aboutsection{
-       height: auto;
-    }
-      .education{
-         -webkit-margin-top: 70px;
-         -moz-margin-top: 100px;
-        justify-content:center;
-       
-      }
-      .education li{
-        height:70px;
-        padding: 0 2px 2px 0;
-        font-size: 14px;
-     
-      }
-    .titleedu{
-      text-align: right;
-    }
-    .pads{
-      margin-top: 15px;
-      font-size: 15px;
-      font-family: Arial, sans-serif;
-      letter-spacing: 0.5px;
-      line-height: 22px;
-    }
-    .caps{
-      font-size: 18px;
-    }
-    
-  }
-  
+        @media only screen and (max-width: 600px) {
+            .about{
+            background-size: cover;
+            flex-basis: 100%;
+            
+            }
+            .aboutsection{
+              height: auto;
+            }
+              .education{
+                margin-top: 70px;
+                margin-top: 100px;
+                justify-content:center;
+              
+              }
+              .education li{
+                height:70px;
+                padding: 0 2px 2px 0;
+                font-size: 14px;
+            
+              }
+            .titleedu{
+              text-align: right;
+            }
+            .pads{
+              margin-top: 15px;
+              font-size: 15px;
+              font-family: Arial, sans-serif;
+              letter-spacing: 0.5px;
+              line-height: 22px;
+            }
+            .caps{
+              font-size: 18px;
+            }
+            
+          }
+          
   @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -399,7 +396,7 @@
         display: block;
         max-height: 350px;
         width:400px;
-        /* align-self: center; */
+        align-self: center;
         transition: transform .3s;
     }
     
@@ -415,7 +412,7 @@
         font-family: Arial, sans-serif;
       }
       
-      .images h3 {
+      .images h2 {
         font-size: 16px;
         border: 1px solid rgba(115, 115, 115, 0.4);
         border-radius: 4px;
@@ -425,10 +422,9 @@
       .galleries a, .mainpanel a{
         text-decoration: none !important;
         color: black;
-    ;
       }
       .images, .imageslayout{
-        padding: 2px;
+        padding: 5px;
       }
  
       .social2{
@@ -462,7 +458,11 @@
       
     /* ======================== EVENTS - KIDS ================= */
     
-    .sectionkids, .wedding, .people {
+<<<<<<< HEAD
+    .sectionkids, .wedding, .people, .sectionportraits {
+=======
+    .sectionkids, .wedding {
+>>>>>>> parent of c880c1c... add contact section and people gallery
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
@@ -728,6 +728,7 @@
   /*==========================Contact section ========================================*/
 
   body.contact{
+      font-family: Arial, sans-serif;
       background: url(contact.jpg);
       background-repeat:no-repeat;
       background-size: cover;
@@ -763,18 +764,20 @@
           display: flex;
           flex:1 1 140px;
           flex-direction: row;
-          font-family: 'Simonetta', cursive;
-          width:400px;
-           height: 100px;
+          font-family: Arial,sans-serif;
+          width:600px;
+          /* margin: 20px; */
+          height: 100px;
         }
 
       #paragraph p{
-         text-align: justify;
-          font-size: 18px;
-		      line-height: 24px;
-          color: 
-          #1a1a1a;
-          /* background-color: yellow; */
+          align-self: center;
+          text-align: center;
+          /* padding: 20px; */
+          font-size: 16px;
+		line-height: 22px;
+          color: black;
+          opacity: 0.7;
         }
 
   /*==========CONTACT FORM==============*/
@@ -822,7 +825,7 @@
         display: block;
         width:100px;
         margin:20px 0 0px 0;
-        border-radius:3px;https://web.whatsapp.com/
+        border-radius:3px;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
@@ -938,7 +941,8 @@
     padding-top: auto;
     display: flex;
     flex-wrap: wrap;
-	justify-content: flex-end;
+    justify-content: flex-end;
+    position: relative;
 	  align-items: center;
     flex-direction:column;
     background-color: transparent;
@@ -963,8 +967,8 @@
     }
   }
   
-  /*==========================================================*/
- /*SCROLLER */ 
+  /*========================= SCROLLER =================================*/
+
  
   /* width */
   ::-webkit-scrollbar {

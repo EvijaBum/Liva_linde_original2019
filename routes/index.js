@@ -35,21 +35,32 @@ var express             = require("express"),
         });
 
     // Travel - nature
-        router.get("/landscapes", function(req, res){
-        res.render("landscapes"); 
+        router.get("/travelnature", function(req, res){
+        res.render("travelnature"); 
         });
-    // Portraits
+<<<<<<< HEAD
+    // People
     router.get("/people", function(req, res){
         res.render("people"); 
     });
+     // Portraits
+     router.get("/portraits", function(req, res){
+        res.render("portraits"); 
+    });
+=======
 
+>>>>>>> parent of c880c1c... add contact section and people gallery
 
     // travel - cities
         router.get("/travelcities", function(req, res){
             res.render("travelcities"); 
         });
 
-
+    // Portraits
+        router.get("/portraits", function(req, res){
+            res.render("portraits"); 
+        });
+    
     // Sport
         router.get("/sport", function(req, res){
             res.render("sport"); 
@@ -60,10 +71,7 @@ var express             = require("express"),
             res.render("brands"); 
         });
         
-    // Photo sessions
-        router.get("/photosessions", function(req, res){
-            res.render("photosessions"); 
-        });
+   
 
 // CONTACT SECTION
     router.get("/contact", function(req, res){
