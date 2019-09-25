@@ -24,7 +24,6 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 
-//PASSPORT LOCAL //
 app.use(require("express-session")({
     secret: "Once again Rusty wins cutest dog!",
     resave: false,

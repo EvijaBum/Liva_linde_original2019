@@ -14,7 +14,7 @@
     /*navigation bar*/
     .navbar-default{
     display: block;
-    background: rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.5);
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 10px;
@@ -31,8 +31,7 @@
   .nav.navbar-nav li a:hover {
     border-bottom: 1px solid white;
     text-decoration:none;
-    color: #b3e6ff;
-    
+    color:hsla(59, 78%, 61%, 0.897) ;
   }
   .nav.navbar-nav li a:focus{
     background-color: transparent;
@@ -148,13 +147,13 @@
       opacity: 0.9;
     }
 
-.galleries a, .mainpanel a{
-  text-decoration: none !important;
-  color: black;
-}
-.images, .imageslayout{
-  padding: 2px;
-}
+    .galleries a, .mainpanel a{
+      text-decoration: none !important;
+      color: black;
+    }
+    .images, .imageslayout{
+      padding: 2px;
+    }
     @media screen and (max-width: 600px){
     .social{
       margin-top:150px;
@@ -178,10 +177,6 @@
       margin: 0 20px 0 0;
       position: relative;
       width: 60px;
-    }
-   .navbar-default{
-      background: rgba(0,0,0,0.4);
-
     }
   }
 
@@ -305,6 +300,7 @@
       font-family: Arial, sans-serif;
       letter-spacing: 0.5px;
       line-height: 22px;
+      height: auto;
     }
     .caps{
       font-size: 18px;
@@ -360,7 +356,7 @@
   .mywork {
     background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 110px;
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     }
@@ -452,7 +448,7 @@
       
     /* ======================== SECTIONS UNDER PORTFOLIO ================= */
     
-    .sectionkids, .wedding, .people, .sectionportraits {
+    .sectionkids, .wedding, .people, .sectionportraits, .sectionsports, .sectionwildlife {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
@@ -492,7 +488,7 @@
           padding-top: 20px;
       }
       
-        .kidsevents, .lifestyle, #wedding{
+        .kidsevents, .lifestyle, #wedding, .sports, .wildlife, .landscapes, .portfolio, .portrait{
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -571,7 +567,7 @@
   /*=========================SECTION ROAD JOURNAL=======================================*/
   
   .roadjournal{
-   padding-top:100px;
+   padding-top:110px;
     background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
     height: 100vh;
     overflow-x: hidden;
@@ -594,12 +590,10 @@
      }
     #comingsoon h1{
       font-family: 'Simonetta', cursive;
-      font-size: 86px;
+      font-size: 50px;
       align-self: center;
       padding: 80px;
-      border-radius: 25px;
-      color: white;
-      background-color: rgba(0, 153, 255, 0.3);
+      color: black;
     }
     
 /* .sectionjournal{*/
@@ -762,7 +756,7 @@
 
   #paragraph p{
      text-align: justify;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       color: #1a1a1a;
       /* background-color: yellow; */
@@ -790,13 +784,13 @@
       }
     
       .form:hover{
-        border:1px solid rgb(51, 153, 255);
+        border:1px solid hsla(59, 78%, 61%, 0.897) ;
       }
     
       .form:focus{
         color: white;
         outline: none;
-        border:1px solid rgb(51, 153, 255);
+        border:1px solid hsla(59, 78%, 61%, 0.897);
       }
     
      .textarea {
@@ -855,7 +849,7 @@
       .form-btn:hover{
         background:#A5A5A5 ;
         color: #F4F4F4;
-        border:1px solid rgb(255,239,157);
+        border:1px solid hsla(59, 78%, 61%, 0.897) ;
       }
     
       .form-btn:active{

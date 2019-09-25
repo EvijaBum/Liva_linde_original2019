@@ -19,22 +19,23 @@ var express             = require("express"),
     router.get("/portfolio", function(req, res){
     res.render("portfolio"); 
     }); 
-    // kids - EVENTS
+
+    // Kids
         router.get("/kidsevents", function(req, res){
             res.render("kidsevents"); 
         })
 
-    // lifestyle - events
+    // Lifestyle
         router.get("/lifestyle", function(req, res){
         res.render("lifestyle"); 
         });
 
-    // Wedding - events
+    // Weddings
         router.get("/wedding", function(req, res){
             res.render("wedding"); 
         });
 
-    // Travel - nature
+    // Landscapes
         router.get("/landscapes", function(req, res){
         res.render("landscapes"); 
         });
@@ -47,16 +48,16 @@ var express             = require("express"),
         res.render("portraits"); 
     });
 
-    // // Portraits
-    //     router.get("/portraits", function(req, res){
-    //         res.render("portraits"); 
-    //     });
-    
-    // // Sport
-    //     router.get("/sport", function(req, res){
-    //         res.render("sport"); 
-    //     });
-    
+    // Sport
+    router.get("/sports", function(req, res){
+        res.render("sports"); 
+    });
+
+    // Wildlife
+        router.get("/wildlife", function(req, res){
+            res.render("wildlife"); 
+        });
+
     // // Brands
     //     router.get("/brands", function(req, res){
     //         res.render("brands"); 
