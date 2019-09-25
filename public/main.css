@@ -225,7 +225,7 @@
   .pads{
     justify-content:space-between;
     flex: 1 2 250px;
-	  height: 300px;
+	  height: 200px;
     margin: 15px;
      font-size: 15px;
     font-family: Arial,sans-serif;
@@ -256,7 +256,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-align-items: flex-end;
+    align-items: flex-end;
      width: 100%;
   }
   
@@ -754,17 +754,17 @@ align-items: flex-end;
       display: flex;
       flex:1 1 140px;
       flex-direction: row;
+      align-items: center;
       font-family: 'Simonetta', cursive;
-      width:400px;
-       height: 100px;
+      width: 680px;
+      height: 100px;
     }
 
   #paragraph p{
      text-align: justify;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 24px;
-      color: 
-      #1a1a1a;
+      color: #1a1a1a;
       /* background-color: yellow; */
     }
 
