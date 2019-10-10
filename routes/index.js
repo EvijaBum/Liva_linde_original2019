@@ -58,10 +58,10 @@ var express             = require("express"),
             res.render("wildlife"); 
         });
 
-    // // Brands
-    //     router.get("/brands", function(req, res){
-    //         res.render("brands"); 
-    //     });
+    // Architecture
+        router.get("/architecture", function(req, res){
+            res.render("architecture"); 
+        });
         
 
 // CONTACT SECTION

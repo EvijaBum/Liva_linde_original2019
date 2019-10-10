@@ -211,7 +211,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    border-radius: 4px;
     border-right: 1px white solid;
      border-bottom: 1px white solid;
     margin-top: 110px;
@@ -233,7 +232,7 @@
     }
     
   .caps{
-    font-size: 26px;
+    font-size: 22px;
     color: white;
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
@@ -251,7 +250,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end;
      width: 100%;
   }
   
@@ -261,11 +259,16 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
-    color: 	rgb(48,48,48);
+    color: rgb(0, 0, 0,0.8);
   }
   
   .education ul {
     list-style-type: circle;
+    padding: 0;
+    margin: 0;
+  }
+  #lighter {
+    margin-left: 90px;
   }
  
  
@@ -276,12 +279,14 @@
       flex-basis: 100%;
      
     }
+    .intro {
+      margin-top: 80px;
+    }
     .aboutsection{
        height: auto;
     }
       .education{
-         margin-top: 70px;
-         margin-top: 100px;
+         margin-top: 40px;
         justify-content:center;
        
       }
@@ -296,16 +301,19 @@
     }
     .pads{
       margin-top: 15px;
-      font-size: 15px;
+      font-size: 12px;
       font-family: Arial, sans-serif;
       letter-spacing: 0.5px;
       line-height: 22px;
       height: auto;
     }
     .caps{
-      font-size: 18px;
+      font-size: 15px;
     }
-    
+    #lighter {
+      padding: 0;
+      margin: 0;
+    }
   }
   
   @media screen 
@@ -408,7 +416,7 @@
         padding: 10px;
         width: auto;
         font-size: 15px;
-        border: 1px solid rgba(115, 115, 115, 0.4);
+        border: 1px solid rgba(0, 0, 0, 0.4);
         border-radius: 4px;
         color:  #1a1a1a;
         font-family: "Arial", "sans-serif";
@@ -424,6 +432,7 @@
       }
  
       .social2{
+        padding-top: 15px;
         display:flex;
         flex-direction:row;
         justify-content: center;
@@ -448,7 +457,7 @@
       
     /* ======================== SECTIONS UNDER PORTFOLIO ================= */
     
-    .sectionkids, .wedding, .people, .sectionportraits, .sectionsports, .sectionwildlife {
+    .sectionkids, .wedding, .people, .sectionportraits, .sectionsports, .sectionwildlife, .sectionarchitecture {
       background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
       min-height: 100vh;
       padding: 15px 0;
