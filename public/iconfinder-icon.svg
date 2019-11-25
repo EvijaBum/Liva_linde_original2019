@@ -1,0 +1,26 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_9">
+   <stop offset="0" stop-color="#fffcfc"/>
+   <stop offset="1" stop-color="#000303"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_10">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="0.960938" stop-color="#000000"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke-miterlimit="10" stroke-width="0.5" stroke="#545454" fill="none" id="svg_1" d="m16.354,12.522c2.021999,0.009999 3.655001,1.66 3.645,3.683l1.460999,0.007c0.014002,-2.829 -2.268999,-5.135 -5.098999,-5.149l-0.007,1.459001z" class="st0"/>
+  <path fill="url(#svg_10)" id="svg_3" d="m24.323999,3.885c2.210001,0 4,1.791 4,4l0,15.847c0,2.209 -1.789999,4 -4,4l-15.844999,0c-2.21,0 -4,-1.791 -4,-4l0,-15.847c0,-2.209 1.79,-4 4,-4l15.844999,0m0,-1l-15.844999,0c-2.757,0 -5,2.243 -5,5l0,15.847c0,2.757 2.243,5 5,5l15.846001,0c2.757,0 5,-2.243 5,-5l0,-15.847c-0.001001,-2.757 -2.244001,-5 -5.001001,-5l0,0z" class="st2"/>
+  <circle stroke-miterlimit="10" stroke-width="0.5" stroke="#545454" fill="none" id="svg_4" r="5.834" cy="15.809" cx="16.617" class="st0"/>
+  <circle stroke-miterlimit="10" stroke-width="0.5" stroke="url(#svg_9)" fill="none" id="svg_5" r="7.259" cy="15.73473" cx="16.54273" class="st0"/>
+  <line stroke-miterlimit="10" stroke-width="0.5" stroke="#f7f7f7" fill="none" id="svg_6" y2="12.306" y1="12.306" x2="10.26" x1="4.479" class="st0"/>
+  <line stroke-miterlimit="10" stroke-width="0.5" fill="none" id="svg_7" y2="12.306" y1="12.306" x2="28.757" x1="22.974" class="st0"/>
+  <path stroke-miterlimit="10" stroke-width="0.5" stroke="#f7f4f4" fill="none" id="svg_8" d="m26.478001,9.077c0,0.357 -0.290001,0.647 -0.648001,0.647l-2.566999,0c-0.358,0 -0.648001,-0.29 -0.648001,-0.647l0,-2.568c0,-0.358 0.290001,-0.648 0.648001,-0.648l2.566999,0c0.358,0 0.648001,0.29 0.648001,0.648l0,2.568z" class="st0"/>
+ </g>
+</svg>

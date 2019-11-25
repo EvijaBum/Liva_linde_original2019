@@ -1,370 +1,301 @@
   @import url(https://fonts.googleapis.com/css?family=Raleway:300);
   @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
 
 
   body.home { 
-   background-image: url(livalinde.jpg) ;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position:center;
-  background-color: white;
-  overflow-x: hidden;
-  height: 100vh;
-  }
-    /*navigation bar*/
-    .navbar-default{
-    display: block;
-    background:rgba(0,0,0,0.5);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 10px;
+    background-image: url(livalinde.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: grey;
+    overflow-x: hidden;
+    height: 100vh;
   }
 
-  .nav.navbar-nav li a{
-    color: white;
-   text-transform: uppercase;
-   font-size: 16px;
-   text-align: center;
-   font-family: Arial, sans-serif;
-   border-bottom-color: black;
-  }
-  .nav.navbar-nav li a:hover {
-    border-bottom: 1px solid white;
-    text-decoration:none;
-    color:hsla(59, 78%, 61%, 0.897) ;
-  }
-  .nav.navbar-nav li a:focus{
-    background-color: transparent;
-     text-decoration:none
-  }
-
-  nav,.message, .social{
-    animation: 0.8s fadein 0.5s forwards;
-    opacity: 0;
-  }
-  
-  @keyframes fadein{
-    100%{
-      opacity: 1;
+/*navigation bar*/
+    .navbar{
+      display: block;
+      background:rgba(59, 59, 59, 0.5);
+      padding-bottom: 6px;
+      padding-top: 6px;
+      padding-right: 6px;
+      border: none;
+      border-radius: 0;
     }
-  }
-  /*social icons*/ 
-  .social{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 1 150px;
-    margin-top: 20%;
+    .nav.navbar-nav li {
+      margin: 3px;
     }
-
-
-.social-media {
-  border-radius: 50%;
-  display: inline-block;
-  height: 70px;
-  margin: 0 20px 0 0;
-  position: relative;
-  width: 70px;
-}
-.social-media:last-of-type {
-  margin: 0;
-}
-.social-media::after, .social-media::before, .social-media svg {
-  bottom: 0;
-  display: inherit;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.social-media::after, .social-media::before {
-  content: '';
-}
-.social-media::after, .social-media svg {
-  border-radius: inherit;
-}
-.social-media svg {
-  height: 100%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  width: 100%;
-}
-
-.social-media::after {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
-  height: calc(100% - 2px);
-  width: calc(100% - 2px);
-  z-index: -1;
-}
-.social-media::before {
-  color: rgba(0, 0, 0, 0.2);
-  font: 32px 'FontAwesome';
-  height: 32px;
-  line-height: 1em;
-  text-align: center;
-  transition: all 0.4s linear;
-  width: 32px;
-}
-
-.social-media:hover::before {
-  color: #212121;
-}
-.social-media.facebook::before {
-  content: '\f09a';
-}
-.social-media.twitter::before {
-  content: '\f099';
-}
-.social-media.instagram::before {
-  content: '\f16d';
-}
-.social-media.linkedin::before {
-  content: '\f0e1';
-}
-.social-media.youtube::before {
-  content: '\f16a';
-}
-
-
-
-    .message{
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      color: white;
-      flex: 2 2 200px;
-    }
-    .home h1{
-      font-family: 'Simonetta', cursive;
-      font-size: 55px;
-      font-weight: normal;
-      opacity: 0.9;
-     }
-    .home p{
-      font-family: 'Simonetta', cursive;
-      font-size: 27px;
-      opacity: 0.9;
-    }
-
-    .galleries a, .mainpanel a{
-      text-decoration: none !important;
-      color: black;
-    }
-    .images, .imageslayout{
-      padding: 2px;
-    }
-    @media screen and (max-width: 600px){
-    .social{
-      margin-top:150px;
-      flex-direction:column;
-      }  
-      .home h1{
-        font-size: 40px;
-      }
-      .home p{
-        font-size: 25px;
-      }
-    .message{
-      padding-top: 80px;
-      text-align: center;
-      letter-spacing: 0.2px;
-      }
-    .social-media {
-      border-radius: 50%;
-      display: inline-block;
-      height: 60px;
-      margin: 0 20px 0 0;
-      position: relative;
-      width: 60px;
-    }
-  }
-
- /*============================  Page About me ====================================*/
-
- 
-  @keyframes fadein{
-    100%{
-      opacity: 1;
-    }
-  }
-.parallax {
-  /* The image used */
-  background-image: url("Fons_001.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  .aboutsection{
-    display: flex;
-    flex-direction:column;
-    width: 100%;
-    height: 800px;
-  }
-  .intro{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    border-right: 1px white solid;
-     border-bottom: 1px white solid;
-    margin-top: 110px;
-  }
-
-  .pads{
-    justify-content:space-between;
-    flex: 1 2 250px;
-	  height: 200px;
-    margin: 15px;
-     font-size: 15px;
-    font-family: Arial,sans-serif;
-    text-align: left;
-    color: #262626;
-    font-weight: 500;
-  }
-    .pads p{
-       line-height: 24px;
-    }
-    
-  .caps{
-    font-size: 22px;
-    color: white;
-    animation: 0.8s fadein 0.5s forwards;
-    opacity: 0;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
- 
-  @keyframes fadein{
-    100%{
-      opacity: 1;
-    }
-  }
-
-  .education{
-     font-family: Arial,sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-     width: 100%;
-  }
-  
-
-  .education li{
-    height:60px;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    color: rgb(0, 0, 0,0.8);
-  }
-  
-  .education ul {
-    list-style-type: circle;
-    padding: 0;
-    margin: 0;
-  }
-  #lighter {
-    margin-left: 90px;
-  }
- 
- 
+        .nav.navbar-nav li a {
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          border-radius: 15px;
    
-@media only screen and (max-width: 600px) {
-    .about{
-     background-size: cover;
-      flex-basis: 100%;
-     
-    }
-    .intro {
-      margin-top: 80px;
-    }
-    .aboutsection{
-       height: auto;
-    }
-      .education{
-         margin-top: 40px;
-        justify-content:center;
-       
-      }
-      .education li{
-        height:70px;
-        padding: 0 2px 2px 0;
-        font-size: 14px;
-     
-      }
-    .titleedu{
-      text-align: right;
-    }
-    .pads{
-      margin-top: 15px;
-      font-size: 12px;
-      font-family: Arial, sans-serif;
-      letter-spacing: 0.5px;
-      line-height: 22px;
+        
+          }
+          .nav.navbar-nav .active {
+            background: rgba(247, 247, 247, 0.6);
+            border-radius: 15px;
+          }
+        .nav.navbar-nav li a:hover {
+          background-color: rgba(217, 165, 32, 0.2);
+          text-decoration:none;
+          border-radius: 15px;
+          color: white;
+        }
+
+        .nav.navbar-nav li a:focus{
+          background-color: rgba(217, 165, 32, 0.2);
+          text-decoration:none;
+          border-radius: 15px;
+        }
+
+        nav, .message, .social{
+          animation: 0.8s fadein 0.5s forwards;
+          opacity: 0;
+        }
+
+        @keyframes fadein{
+          100%{
+            opacity: 1;
+          }
+        }
+
+    
+ /*SOCIAL ICON DESIGN*/ 
+      .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        margin-top: 18%;
+        }     
+        
+        .items-social {
+          align-self: flex-start;
+          align-items: flex-start;
+        }
+          .social-media {
+            display: inline-block;
+            height: 70px;
+            position: relative;
+            width: 70px;
+            }
+              .social-media:last-of-type {
+                margin: 0;
+              }
+              .social-media::after, .social-media::before, .social-media svg {
+                bottom: 0;
+                display: inherit;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .social-media::after, .social-media::before {
+                content: '';
+              }
+              .social-media::after, .social-media svg {
+                border-radius: inherit;
+              }
+              .social-media svg {
+                height: 100%;
+                -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                width: 100%;
+              }
+
+              .social-media::after {
+                height: calc(100% - 1px);
+                width: calc(100% - 1px);
+                z-index: -1;
+              }
+              .social-media::before {
+                color: rgba(0, 0, 0, 0.3);
+                font: 30px 'FontAwesome';
+                height: 30px;
+                line-height: 1em;
+                text-align: center;
+                transition: all 0.4s linear;
+                width: 30px;
+              }
+
+              .social-media:hover::before {
+                color: rgb(224, 218, 218);
+              
+              }
+              .social-media.facebook::before {
+                content: '\f09a';
+              }
+              .social-media.twitter::before {
+                content: '\f099';
+              }
+              .social-media.instagram::before {
+                content: '\f16d';
+              }
+              .social-media.linkedin::before {
+                content: '\f0e1';
+              }
+              .social-media.youtube::before {
+                content: '\f16a';
+              }
+
+/* HEADING TEXT */
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
       height: auto;
+      
     }
-    .caps{
-      font-size: 15px;
-    }
-    #lighter {
-      padding: 0;
-      margin: 0;
+      .message{
+        display: flex;
+        justify-content: row;
+        align-self: center;
+        /* height: 150px; */
+      }
+      
+        .message p{
+          font-family: 'Simonetta', cursive;
+          font-size: 28px;
+          color: rgb(255, 255, 255, 0.9);
+          letter-spacing: 2px;
+          font-weight: 400;
+          margin: 12px;
+        }
+        .main h1{
+          font-family: 'Simonetta', cursive;
+          font-size: 60px;
+          letter-spacing: 2px;
+          color: rgb(255, 255, 255, 0.7);
+        }
+
+
+
+ /*============================  ABOUT ME ====================================*/
+
+ 
+  @keyframes fadein{
+    100%{
+      opacity: 1;
     }
   }
-  
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-      .pads{
-      flex: 1 2 300px;
-       font-size:15px;
+ 
+    .parallax {
+      /* The image used */
+      background-image: url("Fons_001.jpg");
+
+      /* Full height */
+      height: 100vh;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .about {
+      margin: 0;
+      padding: 0;
+    }
+        .aboutsection{
+          display: flex;
+          flex-direction:column;
+          width: 100%;
+        }
+
+        .intro{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction:row;
+          border-bottom: 1px #fffffff5 solid;
+ 
         }
         .caps{
-          font-size: 24px;
+          font-size: 22px;
+          color: white;
+          animation: 0.8s fadein 0.5s forwards;
+          opacity: 0;
         }
-         .education{
-        font-size: 15px;
-        margin-top:20px;
-        margin-bottom: 110px;
-       }
-       .aboutsection{
-        height: 800px;
-       }
-    }
-    @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 1) { 
-              .pads{
-          flex: 1 2 300px;
-           font-size:15px;
+
+          .pads{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: column;
+            margin: 15px;
+            font-size: 16px;
+            font-family: Arial,sans-serif;
+            color: #222121;
+            font-weight: 200;
+            text-align: justify; /* For Edge */
+            text-align-last: left;
+            padding-bottom: 2%;
+          }
+            .pads p{
+              line-height: 24px;
+            }
+            
+          @keyframes fadein{
+            100%{
+              opacity: 1;
+            }
+          }
+
+      .education{
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 6%;
+;
+        /* background: yellowgreen; */
+      }
+        .education h3 {
+          color: white;
+          padding: 3%;
+          z-index: -1;
         }
-        .caps{
-          font-size: 24px;
-        }
-         .education{
-        font-size: 15px;
-        margin-top:20px;
-       }
-       .social3{
-         margin-top: 60px;
-         margin-right: 32px;
-       } 
-    }
-  
+      
+       
+            .education li{
+                /* height:40%; */
+                margin: 0;
+                padding-bottom: 5%;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.527);
+              }
+         
+            
+            .education ul {
+              list-style-type: none;
+              padding: 1%;
+              margin: 0;
+              border-radius: 5px;
+              align-self: baseline;
+              background: rgba(0, 0, 0, 0.081)
+            }
+
+
+            #small {
+              width: 361px;
+              height: 251px;
+            }
+    
+
   /*======================= PORTFOLIO ====================================*/
  
   
   .mywork {
-    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 65%, #e7e8e9 100%);
     min-height: 100vh;
-    padding-top: 110px;
+    /* padding-top: 110px; */
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     }
@@ -381,8 +312,8 @@
     min-height: 800px;
     max-height: auto;
     border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
     display: flex;
+    padding-top:2%;
     flex-direction: column;
     justify-content: center;
     width: auto;
@@ -395,8 +326,7 @@
     .galleries{
       display: flex;
       flex-wrap:wrap;
-      justify-content:center;
-      padding-top: 20px;
+      justify-content: center;
     }
     .galleries div img {
         display: block;
@@ -742,34 +672,36 @@
     }
     
   .contact1{
-      padding-top:110px;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       height: auto;
+      margin: 0;
       
     }
-    .inner {
-      padding-top: 10px;
-    }
-    #paragraph{
-      display: flex;
-      flex:1 1 140px;
-      flex-direction: row;
-      align-items: center;
-      font-family: 'Simonetta', cursive;
-      width: 680px;
-      height: 100px;
-    }
+      .inner {
+        padding-top: 2%;
+      }
+      #paragraph{
+        display: flex;
+        flex:1 1 140px;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Simonetta', cursive;
+        width: 680px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+      }
 
-  #paragraph p{
-     text-align: justify;
-      font-size: 18px;
-      line-height: 24px;
-      color: #1a1a1a;
-      /* background-color: yellow; */
-    }
+      #paragraph p{
+        text-align: justify;
+          font-size: 18px;
+          line-height: 24px;
+          color: #1a1a1a;
+          /* background-color: yellow; */
+        }
 
 
   /*==========CONTACT FORM==============*/
@@ -779,7 +711,7 @@
       .form{
         font-family: Arial, sans-serif;
         width: 100%;
-        padding:10px;
+        padding:2%;
         background: white;
         opacity: 0.7;
         border-radius: 4px;
@@ -793,15 +725,14 @@
       }
     
       .form:hover{
-        border:1px solid hsla(59, 78%, 61%, 0.897) ;
+        border:1px solid whitesmoke;
       }
     
       .form:focus{
         color: white;
         outline: none;
-        border:1px solid hsla(59, 78%, 61%, 0.897);
+        border:1px solid whitesmoke;
       }
-    
      .textarea {
           height: 200px;
           max-width: 100%;
@@ -817,7 +748,7 @@
         display: block;
         width:100px;
         margin:20px 0 0px 0;
-        border-radius:3px;
+        border-radius: 3px;
         transition: all 0.3s;
         transition: all 0.3s;
         transition: all 0.3s;
@@ -858,7 +789,7 @@
       .form-btn:hover{
         background:#A5A5A5 ;
         color: #F4F4F4;
-        border:1px solid hsla(59, 78%, 61%, 0.897) ;
+        border:0.8px solid whitesmoke;
       }
     
       .form-btn:active{
@@ -885,6 +816,8 @@
         justify-content: flex-end;
         width: 100%;
         height: 100px;
+        margin: 0;
+        padding: 0;
       }
         .alert-danger{
           width: 250px;
@@ -900,57 +833,28 @@
         
         }
 
-/* ============ MOBILE VERSION =============== */
 
-    @media screen and (max-width: 600px){    
-      body.contact{
-        background-size: auto auto;
-        background-position: top left;
-        flex-basis: 100%;
-      }
-      .contact1{
-          padding-top:80px;
-      }
-       #paragraph{
-          width:300px;
-          margin: 20px;
-          height: 100px;
-        }
-
-      #paragraph p{
-        padding: 20px;
-        font-size: 15px;
-      }
-      
-      .social4{
-        margin-bottom:20px;
-      }
-      
-  }
     
 /* ========= FOOTER ========= */
   .footer {
     padding-top: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
 	  align-items: center;
     flex-direction:column;
-    background-color: transparent;
-    line-height: 30px;
-	  height: 100px;
-    opacity: 0.8;
-    /* background-color: green; */
-   
-}
-  .fottext{
-	  	text-align: center;
-	  /* background-color: pink; */
-    font-family: Arial,sans-serif;
-    font-size: 14px;
-    color: black;
-  }
+   padding-top: 5%;
+    /* background-color: rgba(230, 225, 225, 0.15); */
+    line-height: 20px;
+    height: 10%; 
+     }
+      .fottext{
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+      }
 
  
   @media only screen and (min-width: 1382px) {
@@ -959,25 +863,209 @@
     }
   }
   
-  /*========================= SCROLLER =================================*/
 
+  /* --------------------------------- MEDIA QUERIES ----------------------------------- */
+
+  /* ------- NAV ---- */
  
-  /* width */
-  ::-webkit-scrollbar {
-      width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-      background: #f1f1f1; 
-  }
+  /* ------- HOME---- */
+
+  @media only screen and (max-width: 600px) {
+
+    .social{
+      margin-top:40%;
+      flex-direction:column;
+      }  
+      .social-media {
+        border-radius: 50%;
+        display: inline-block;
+        height: 50px;
+        margin: 0 18px 0 0;
+        position: relative;
+        width: 50px;
+      }
+        .social-media::before {
+          color: rgba(0, 0, 0, 0.3);
+          font: 22px 'FontAwesome';
+          height: 28px; 
+          line-height: 1em;
+          text-align: center;
+          transition: all 0.3s linear;
+          width: 30px;
+        }
+        .main h1{
+          font-size: 42px;
+          margin-top: 60px;
+          
+        }
+        .message p{
+          font-size: 20px;
+          text-align: center;
+          margin: 5px;
+        }
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-      background: #888; 
+  
+  }
+
+  /* ABOUT ME */
+        
+  @media only screen and (max-width: 600px) {
+    .about{
+      background-size: cover;
+      flex-basis: 100%;
+      background-position: top; 
+    }
+    .intro {
+      margin-top: 2%;
+      align-content: left;
+    }
+        .pads{
+          font-size: 16px;
+          font-family: Arial, sans-serif;
+          line-height: 22px;
+          height: auto;
+        }
+        .pads p {
+          font-size: 15px;
+        }
+  
+      .education{
+         margin-top: 5%;
+         width: 100%;
+         height: 100%;
+         padding: 0;
+         align-content:center;
+        }
+          .education li{
+            height:70px;
+            padding: 0 2px 2px 0;
+            font-size: 16px;
+            align-self: center;
+            font-weight: normal;
+          }
+          .education h2{
+            font-size: 18px;
+          }
+          #lighter {
+            margin-top: 10%;
+           }
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-      background: #555; 
-  }
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .aboutsection{
+      height: 800px;
+    }
+      .pads{
+      flex: 1 2 300px;
+      font-size:16px;
+        }
+        .caps{
+          font-size: 24px;
+        }
+        .education{
+        font-size: 16px;
+        margin-top:20px;
+        margin-bottom: 110px;
+      }
+    }
+
+    @media screen 
+      and (min-device-width: 1200px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 1) { 
+        .pads{
+          flex: 1 2 300px;
+          font-size:16px;
+        }
+          .caps{ @media screen 
+            and (min-device-width: 1200px) 
+            and (max-device-width: 1600px) 
+            and (-webkit-min-device-pixel-ratio: 2)
+            and (min-resolution: 192dpi) { 
+              .aboutsection{
+                height: 800px;
+              }
+                .pads{
+                flex: 1 2 300px;
+                font-size:16px;
+                  }
+                  .caps{
+                    font-size: 24px;
+                  }
+                  .education{
+                  font-size: 16px;
+                  margin-top:20px;
+                  margin-bottom: 110px;
+                }
+              }
+          
+              @media screen 
+                and (min-device-width: 1200px) 
+                and (max-device-width: 1600px) 
+                and (-webkit-min-device-pixel-ratio: 1) { 
+                  .pads{
+                    flex: 1 2 300px;
+                    font-size:16px;
+                  }
+                    .caps{
+                      font-size: 24px;
+                    }
+                    .education{
+                    font-size: 16px;
+                    margin-top:20px;
+                    }
+                  .social3{
+                    margin-top: 60px;
+                    margin-right: 32px;
+                  } 
+              }
+          
+            font-size: 24px;
+          }
+          .education{
+          font-size: 16px;
+          margin-top:20px;
+          }
+        .social3{
+          margin-top: 60px;
+          margin-right: 32px;
+        } 
+    }
+        /* ============ Contact=============== */
+
+        @media screen and (max-width: 600px){    
+          body.contact{
+            background-size: auto auto;
+            background-position: top right;
+            flex-basis: 100%;
+          } 
+
+          .contact1{
+              padding-top:80px;
+          }
+           #paragraph{
+              width:300px;
+              margin: 20px;
+              height: 100px;
+            }
+    
+          #paragraph p{
+            padding: 20px;
+            font-size: 15px;
+          }Contact
+          
+          .social4{
+            margin-bottom:10%;
+          }
+          #paragraph p{
+            text-align: justify;
+             font-size: 15px;
+             line-height: 22px;
+           }
+       
+          
+      }
