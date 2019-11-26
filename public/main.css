@@ -343,14 +343,14 @@
      .shorttext{
        text-align: center;
        position: relative;
-        padding: 10px;
+        padding: 10px 0 15px 0;
         width: auto;
-        font-size: 15px;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        border-radius: 4px;
-        color:  #1a1a1a;
+        font-size: 16px;
+        color: rgb(73, 73, 73);
         font-family: "Arial", "sans-serif";
+        letter-spacing: 1px;
       }
+      
    
        
       .galleries a, .mainpanel a{
@@ -362,7 +362,7 @@
       }
  
       .social2{
-        padding-top: 15px;
+        padding-top: 8%;
         display:flex;
         flex-direction:row;
         justify-content: center;
@@ -376,6 +376,7 @@
   
   @media screen and (max-width: 600px) {
      .galleries div img { 
+       padding-top: 5%;
         max-height:230px;
         width: 250px;
       }
@@ -927,6 +928,7 @@
         }
         .pads p {
           font-size: 15px;
+          font-weight: bolder;
         }
   
       .education{
@@ -935,13 +937,18 @@
          height: 100%;
          padding: 0;
          align-content:center;
+         display: flex;
+         flex-wrap:wrap;
+         
         }
           .education li{
             height:70px;
-            padding: 0 2px 2px 0;
+            /* padding: 0 2px 2px 0; */
+            margin-bottom: 2%;
+            padding: 0;
+            background: black;
             font-size: 16px;
-            align-self: center;
-            font-weight: normal;
+           font-weight: normal;
           }
           .education h2{
             font-size: 18px;
@@ -1045,7 +1052,7 @@
           } 
 
           .contact1{
-              padding-top:80px;
+              padding-top: 2%;
           }
            #paragraph{
               width:300px;
@@ -1054,9 +1061,9 @@
             }
     
           #paragraph p{
-            padding: 20px;
-            font-size: 15px;
-          }Contact
+            
+            font-size: 16px;
+          }
           
           .social4{
             margin-bottom:10%;
