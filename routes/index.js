@@ -63,6 +63,10 @@ var express             = require("express"),
             res.render("architecture"); 
         });
         
+// PRICE SECTION
+//   router.get("/price", function(req, res){
+//     res.render("price"); 
+//     });
 
 // CONTACT SECTION
     router.get("/contact", function(req, res){
@@ -77,10 +81,10 @@ var express             = require("express"),
         res.render("roadjournal");
     });
 
-//SHOW
-    router.get("/blog1", function(req, res){
-        res.render("blog1");
-    });
+// //SHOW
+//     router.get("/blog1", function(req, res){
+//         res.render("blog1");
+//     });
 
 
 //=============================================================//

@@ -28,8 +28,8 @@
     }
         .nav.navbar-nav li a {
           color: white;
-          text-transform: uppercase;
-          font-size: 15px;
+          letter-spacing: 1px;
+          font-size: 16px;
           text-align: center;
           font-family: Arial, sans-serif;
           border-radius: 15px;
@@ -501,6 +501,65 @@
         opacity: 1;
       }
     }
+
+  
+  /*========================= PRICE LIST =======================================*/
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+      .darkgrey {
+        background: rgb(51, 51, 51);
+        margin-top:-20px;
+        padding: 0;
+        height: 400px;
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+      }
+          .text {
+            color: rgb(255, 255, 255, 0.9);
+          
+            align-self: center;
+           
+          }
+          .text h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 32px;
+            font-weight: normal;
+            padding-bottom: 15px;
+          }
+          .text ul li {
+            color:rgb(246, 226, 195);
+            list-style: none;
+            font-size: 18px;
+            padding-left:50px;
+          }
+      .kidsImage {
+       /* background: green; */
+       padding-top: 50px;
+       
+        }
+          .kids {
+            height:500x;
+            width: 400px;
+            z-index:1;
+            position: relative;
+
+          }
+      .lightgrey {
+        background: rgb(140, 140, 140);
+        height: 20%;
+        margin:0;
+        padding: 0;
+        height: 400px;
+      }
+
+
   /*=========================SECTION ROAD JOURNAL=======================================*/
   
   .roadjournal{
