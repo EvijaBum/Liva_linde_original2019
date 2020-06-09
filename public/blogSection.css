@@ -1,0 +1,130 @@
+
+
+   
+  /*     =================== Road Journal section N1 ================ */
+ 
+
+             .blogSection{
+                display: flex;
+                flex-direction: column;
+                background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+                
+             }
+                .article {
+                  display: flex;
+                  flex-direction: column;
+                  padding-top: 5%;
+                }
+                
+                  .heading{
+                    align-self: center;
+                  }
+                  .heading h1 {
+                    font-family:  'Simonetta', cursive;
+                    font-size: 42px;
+                    text-align: center;
+                    color: #696a6b;
+                   
+                    align-self: center;
+                   }
+                  .heading h2 {
+                    font-family:  'Simonetta', cursive;
+                    font-size: 38px;
+                    text-align: center;
+                    padding-top: 15px;
+                    color: #696a6b;
+                  }
+
+                  .paragraph {
+                    padding: 5%;
+                    text-align: justify;
+                    width: 800px;
+                    align-self: center;               
+                  }
+              
+                  .paragraph p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    line-height: 2em;
+                    letter-spacing: 0.7px;
+                  
+                  }
+                  .imageBlog {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    flex-direction: row;
+                    
+                  }
+                      .blogSection div img{ 
+                        margin: 10px;
+                        height: 400px;
+                        width: auto;
+                        display: block;
+                        }
+               
+                   .nextpage{   
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: flex-end;
+                     flex-wrap: wrap;
+                     padding: 30px;
+                   }
+                      .nextpage h3 {
+                        color: #b4b6ba;
+                        opacity: 0.85;
+                        font-family: 'Simonetta', cursive;
+                        font-size: 22px;
+                        padding: 10px;
+                        position: relative;
+                        margin-top: 5px;
+                      }
+
+
+/* ------------------- MOBILE VERSION --------------- */
+
+   @media screen and (max-width: 960px) {
+              
+                   .blogsection{
+                      flex-direction:row;
+                    }
+              
+                      .blogSection {
+                        display: flex;
+                        width: auto;
+                      }
+                        .blogSection h1{
+                          padding: 25px;
+                          align-self: center;
+                          font-size: 26px;
+                        }
+          
+                        .blogSection h2 {
+                          padding-top: 10px;
+                          font-size: 22px;
+                        }
+                      .paragraph {
+                        padding: 1,5%;
+                        width: auto;
+                      }
+                      
+                       .paragraph p{
+                         padding: 1px;
+                         line-height: 2em;
+                         font-size: 16px;
+                         /* margin:1em; */
+                         letter-spacing: 0.4px;
+                       } 
+
+                      .blogSection div img{ 
+                        padding-top: 5%;
+                        margin: 2px;
+                        height:auto;
+                        width: 260px;
+                      }
+
+                      
+                      .nextpage h3{   
+                        font-size: 18px;
+                       }
+       }

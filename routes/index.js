@@ -11,8 +11,8 @@ var express             = require("express"),
     });
 
 // ABOUT SECTION
-    router.get("/about", function(req, res){
-    res.render("about"); 
+    router.get("/biography", function(req, res){
+    res.render("biography"); 
     });
 
 // PORTFOLIO SECTION
@@ -21,12 +21,12 @@ var express             = require("express"),
     }); 
 
     // Kids
-        router.get("/kidsevents", function(req, res){
-            res.render("kidsevents"); 
+        router.get("/childhood", function(req, res){
+            res.render("childhood"); 
         })
 
     // Lifestyle
-        router.get("/lifestyle", function(req, res){
+        router.get("/lifestyle", function (req, res){
         res.render("lifestyle"); 
         });
 
@@ -40,8 +40,8 @@ var express             = require("express"),
         res.render("landscapes"); 
         });
     // People
-    router.get("/people", function(req, res){
-        res.render("people"); 
+    router.get("/travel", function(req, res){
+        res.render("travel"); 
     });
     // Portraits
     router.get("/portraits", function(req, res){
@@ -59,8 +59,8 @@ var express             = require("express"),
         });
 
     // Architecture
-        router.get("/architecture", function(req, res){
-            res.render("architecture"); 
+        router.get("/interior", function(req, res){
+            res.render("interior"); 
         });
         
 // PRICE SECTION
@@ -69,8 +69,8 @@ var express             = require("express"),
 //     });
 
 // CONTACT SECTION
-    router.get("/contact", function(req, res){
-    res.render("contact"); 
+    router.get("/collaboration", function(req, res){
+    res.render("collaboration"); 
     });
 
 
@@ -81,16 +81,21 @@ var express             = require("express"),
         res.render("roadjournal");
     });
 
-// //SHOW
-//     router.get("/blog1", function(req, res){
-//         res.render("blog1");
-//     });
+//SHOW
+    router.get("/qatar_part_I", function(req, res){
+        res.render("qatar_part_I");
+    });
+    
+    //SHOW
+    router.get("/qatar_part_II", function(req, res){
+        res.render("qatar_part_II");
+    });
 
 
 //=============================================================//
 // // NODEMAILER PATH
 
-router.post("/contact/send", function(req, res) {
+router.post("/collaboration/send", function(req, res) {
     var smtpTransport = nodemailer.createTransport({
       service: 'Yahoo',
       auth: {
@@ -112,12 +117,12 @@ router.post("/contact/send", function(req, res) {
             if(err) {
             req.flash("error", "Something went wrong");
             console.log(err);
-            res.redirect("/contact");
+            res.redirect("/collaboration");
             } else {
                 req.flash("success", "Your e-mail has been sent!");
                 console.log('Message sent: %s', info.messageId);   
                 console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-                res.render('contact');
+                res.render('collaboration');
             }
     });
     

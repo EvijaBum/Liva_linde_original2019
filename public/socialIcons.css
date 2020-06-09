@@ -1,0 +1,79 @@
+    
+ /*SOCIAL ICON DESIGN*/ 
+ .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 18%;
+    }     
+    
+    .items-social {
+      align-self: flex-start;
+      align-items: flex-start;
+    }
+      .social-media {
+        display: inline-block;
+        height: 70px;
+        position: relative;
+        width: 70px;
+        }
+          .social-media:last-of-type {
+            margin: 0;
+          }
+          .social-media::after, .social-media::before, .social-media svg {
+            bottom: 0;
+            display: inherit;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .social-media::after, .social-media::before {
+            content: '';
+          }
+          .social-media::after, .social-media svg {
+            border-radius: inherit;
+          }
+          .social-media svg {
+            height: 100%;
+            -webkit-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+            width: 100%;
+          }
+
+          .social-media::after {
+            height: calc(100% - 1px);
+            width: calc(100% - 1px);
+            z-index: -1;
+          }
+          .social-media::before {
+            color: rgba(0, 0, 0, 0.3);
+            font: 30px 'FontAwesome';
+            height: 30px;
+            line-height: 1em;
+            text-align: center;
+            transition: all 0.4s linear;
+            width: 30px;
+          }
+
+          .social-media:hover::before {
+            color: rgb(224, 218, 218);
+          
+          }
+          .social-media.facebook::before {
+            content: '\f09a';
+          }
+          .social-media.twitter::before {
+            content: '\f099';
+          }
+          .social-media.instagram::before {
+            content: '\f16d';
+          }
+          .social-media.linkedin::before {
+            content: '\f0e1';
+          }
+          .social-media.youtube::before {
+            content: '\f16a';
+          }

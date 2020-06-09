@@ -1,0 +1,178 @@
+/*============================  ABOUT ME ====================================*/
+
+ 
+@keyframes fadein{
+    100%{
+      opacity: 1;
+    }
+  }
+ 
+    .parallax {
+      /* The image used */
+      background-image: url("Fons_001.jpg");
+
+      /* Full height */
+      height: 100vh;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .about {
+      margin: 0;
+      padding: 0;
+    }
+        .aboutsection{
+          display: flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .intro{
+          display: flex;
+          border-bottom: 1px #fffffff5 solid;
+          
+        }
+          .caps{
+            font-size: 32px;
+            color: #ffffffcc;
+            animation: 0.8s fadein 0.5s forwards;
+            letter-spacing: 0.1em;
+            opacity: 0;
+            font-family: 'Simonetta', cursive;
+          }
+
+          .pads{
+            margin: 20px;
+            padding: 15px;
+            font-size: 18px;
+            font-family: Arial,sans-serif;
+            
+            color: #222121b4;
+            font-weight: 200;
+            text-align: justify; /* For Edge */
+          
+            text-align-last: left;
+            padding-bottom: 2%;
+          }
+              .pads p{
+                line-height: 28px;
+              }
+            
+          @keyframes fadein{
+            100%{
+              opacity: 1;
+            }
+          }
+
+          .education{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+           
+            margin-left: 1.2em;
+            align-content: flex-end;
+          }
+
+            #studies h3 {
+              display: flex;
+              color: rgb(241, 240, 236);
+              margin:20px 20px 20px 0;
+              font-family: 'Simonetta', cursive;
+              display: flex;
+              justify-content: flex-end;
+            }
+          
+          
+                .education li{
+    
+                    padding-bottom: 5%;
+                    font-size: 18px;
+                    line-height: 35px;
+                    color: rgba(255, 255, 255, 0.596);
+                  }
+            
+                
+                .education ul {
+                  list-style-type: none;
+                  padding: 1%;
+                  margin: 0;
+                  border-radius: 5px;
+                  align-self: baseline;
+                 
+                  background: rgba(0, 0, 0, 0.335)
+                }
+
+
+                #small {
+                  width: 361px;
+                  height: inherit;
+                  margin-bottom:5%;
+                }
+    
+
+                @media only screen and (max-width: 963px) {
+                    .about{
+                      background-size: cover;
+                      flex-basis: 100%;
+                      background-position: top; 
+                    }
+                    .intro {
+                      flex-direction: column;
+                      margin-top: 2%;
+                      align-content: left;
+                      padding: 0;
+                    }
+                        .pads{
+                          font-size: 20px;
+                          font-family: Arial, sans-serif;
+                          line-height: 22px;
+                          height: auto;
+                        }
+                        .pads p {
+                          font-size: 18px;
+                          font-weight: bolder;
+                        }
+                  
+                      .education{
+                         /* margin-top: 5%; */
+                         align-content: flex-start;
+                         width: auto;
+                         height: auto;
+                         padding: 2,5%;
+                         
+                        }
+                        .education ul {
+                          list-style-type: none;
+                          padding: 2%;
+                          margin: 0;
+                          border-radius: 5px;       padding: 2,5%;
+                          align-self: flex-start;
+                          background: rgba(0, 0, 0, 0.3);
+                   
+                        }
+                          .education li{
+                            font-size: 16,5px;
+                           font-weight: normal;
+                          }
+                          .education h2{
+                            font-size: 18,5px;
+                          }
+                       
+                
+                        #studies h3 {
+                   
+                          justify-content: center;
+                        }
+                      
+                
+                            #small {
+                              width: auto;
+                              height: inherit;
+                              margin-bottom:5%;
+                            }
+                       }

@@ -1,0 +1,107 @@
+	<% include partials/header %>
+	
+	<nav class="navbar fixed-top navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img alt="Brand" style="max-width:100px; margin-left:10px; margin-top:-5px;" src="/logo.png">
+                </a>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                 aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="/">Home</a></li>
+                    <li><a href="biography">Biography</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <!-- <li><a href="price">Price List</a></li> -->
+                    <li><a href="roadjournal">Liv: to be</a></li>
+                    <li class="active"><a href="collaboration">Collaboration</a></li>
+                </ul>
+            </div>
+		</nav>	
+		
+		<body class="parallax1">
+			<div class="contact1">
+
+					<div id="paragraph">
+							<p>
+                               Based in Switzerland.<br>Available all around the world.</p>
+					</div>
+                
+                    <div class="social4">
+                        <div class="items-social">
+                                <a class="social-media facebook" href="https://www.facebook.com/liv.tobe/" target="_blank"></a>
+                            </div>
+                            <div class="items-social"> 
+                                <a class="social-media instagram" href="https://www.instagram.com/liva_linde/" target="_blank"></a>
+                            </div>
+                            <div class="items-social">
+                                <a class="social-media linkedin" href="https://www.linkedin.com/in/liva-linde/" target="_blank"></a>
+                            </div>
+                        </div>
+			
+        
+                                
+                        <div class="inner contact">
+                    
+                                    <!-- Form Area -->
+                                    <div class="contact-form">
+                                        <!-- Form -->
+                                        <form id="contact-us" method="post" action="/collaboration/send">
+                                            <!-- Left Inputs -->
+                                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                                <!-- Name -->
+                                                 <input name="name" id="name" required="required" class="form" placeholder="Name:" data-error="Your Name is Required" />
+                                                  <div class="help-block with-errors"></div>
+                                                <!-- Email -->
+                                                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email:" data-error="Your Phone Email is Required" />
+                                                <div class="help-block with-errors"></div>
+                                                <!-- Subject -->
+                                                <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject:" data-error="Your Subject is Required" />
+                                                <div class="help-block with-errors"></div>
+                                            </div><!-- End Left Inputs -->
+                    
+                                            <!-- Right Inputs -->
+                                            <div class="col-xs-12 col-sm-12 col-md-6 ">
+                                                <!-- Message -->
+                                                <textarea name="message" id="message" class="form textarea"  placeholder="Message" data-error="Please, leave us a message."></textarea>
+                                            </div><!-- End Right Inputs -->
+                                            <!-- Bottom Submit -->
+                                            
+                                            <div class="relative fullwidth col-xs-12">
+                                                <!-- Send Button -->
+                                                <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                                        
+                                            </div><!-- End Bottom Submit -->
+                                            <!-- Clear -->
+                                            <div class="clear"></div>
+                                           </div><!-- End Contact Form Area -->
+                                                   <!-- Message -->
+                                             <div class="messages">
+                                                 <% if (error && error.length > 0){ %>
+                                                <div class="alert alert-danger" role="alert">
+                                                    <%= error %>
+                                                </div>
+                                                <% } %>
+                        
+                                            <% if (success && success.length > 0){ %>
+                                            <div class="alert alert-success" role="alert">
+                                                <%= success %>
+                                            </div>
+                                            <% } %>
+                                          </div>
+                                      </form>
+                                      
+                                    
+                                </div><!-- End Inner -->
+                        
+                     </div>
+ 
+	<% include partials/footer %>

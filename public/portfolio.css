@@ -1,0 +1,206 @@
+ /*======================= PORTFOLIO ====================================*/
+
+ .mywork,.roadjournal {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 65%, #e7e8e9 100%);
+    min-height: 100vh;
+    padding-top: 110px;
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+    }
+
+        @keyframes fadein{
+            100%{
+              opacity: 1;
+            }
+          }
+
+/* DIV CONTAINDER */
+        .portfolio,.sectionjournal{
+          background-color: rgba(255, 255, 255, 0.822);
+          min-height: 800px;
+          max-height: auto;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-family: 'Simonetta', cursive;
+          width: auto;
+        }
+  
+   
+          .galleries{
+            display: flex;
+            padding-top:2%;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+          }
+                .galleries div img{
+                    display: block;
+                    max-height: 350px;
+                    width:400px;
+                    transition: transform .3s;
+                    border-radius: 4px;
+                }
+                
+                  .galleries div img:hover{
+                  transform: scale(0.9);
+                  }
+                
+                .images h2{
+                  text-align: center;
+                  position: relative;
+                  padding: 10px 0 10px 0;
+                  width: auto;
+                  font-size: 26px;
+                  color: rgba(73, 73, 73, 0.918);
+                  font-family: 'Simonetta', cursive;
+                }
+
+                  .galleries a, .mainpanel a{
+                    text-decoration: none !important;
+                    color: black;
+                  }
+                  .images, .imageslayout{
+                    padding: 5px;
+                  }
+            
+            .social2{
+              padding-top: 8%;
+              display:flex;
+              flex-direction:row;
+              justify-content: center;
+              align-items: flex-end;
+              width:auto;
+              flex: 1 1 50px;
+            }
+
+      
+    /* ======================== SECTIONS UNDER PORTFOLIO ================= */
+    
+    .sectionkids,.sectionwedding, .sectionpeople, .sectionportraits, .sectionsports, .sectionwildlife,.sectionlifestyle,.sectionarchitecture, .sectionlandscapes {
+      background-image: linear-gradient(to top, #ecedee 0%, #eceeefc9 75%, #e7e8e9 100%);
+      min-height: 100vh;
+      /* padding: 40px 0; */
+      animation: 0.8s fadein 0.5s forwards;
+      opacity: 0;
+     }
+    
+      @keyframes fadein{
+        100%{
+          opacity: 1;
+        }
+      }
+
+
+  
+             
+      .mainpanel{
+          background-color: rgba(255, 255, 255, 0.918);
+          color: #35373a;
+          min-height: 100vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.06);
+          display: flex;
+          flex-wrap:wrap;
+          justify-content: space-evenly;
+          margin: 3px;
+          padding-top: 3em;
+      }
+      
+       .mainpanel div img{
+          display: flex;
+          flex-wrap: wrap;
+          height: 250px;
+          width: auto;
+        }
+        .imageslayout img {
+          border-radius: 3px;
+        
+        }
+
+
+
+
+
+
+/* ==== LIGHTBOX DESIGN ======= */
+
+    /* 1.Add to footer a js bagueete link to the file name acccording galleries what you wanna display */
+    
+    .lightbox img {
+      width: 100%;
+      margin-bottom: 30px;
+      transition: 0.2s ease-in-out;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    }
+
+        .lightbox img:hover {
+            transform: scale(0.9);
+            box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+        }
+        .baguetteBox-button {
+            background-color: transparent !important;
+        }
+
+/* ============================== */
+
+
+  /* ---------- BUTTON BACK ------*/ 
+  .buttonBack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.5em 0.5em 1.5em 0;
+  }
+  .btn.btn-basic{
+           background: rgba(0,0,0,0.2);
+           padding: 10px;
+           color: white;
+           font-family: "Simoneta", cursive;
+         }
+         .btn.btn-basic:hover{
+            background-color: lightgrey;
+            opacity: 0.6;
+            color:  #1a1a1a;
+         }
+         a.btn.btn-basic {
+          font-size: 16px;
+         }
+/* ........................................... */
+
+
+/* ==================== MOBILDE VERSION PORTFOLIO ================ */    
+  
+@media screen and (max-width: 900px) {
+  .galleries div img{ 
+    padding-top: 5%;
+     max-height:230px;
+     width: 250px;
+   }
+
+   .images h2{
+     font-size: 22px;
+     }
+     .sectionkids, .wedding {
+      padding: 0;
+    }
+
+    .kidsevents, #wedding {
+      border-radius: 0;
+    }
+    .mainpanel{
+       padding: 2em 0 2em 0;
+    }
+    .mainpanel div img{
+        width: 260px;
+        height: auto;
+      }
+  
+    .imageslayout {
+      padding: 0;
+      margin: 0;
+    }
+    a.btn.btn-basic {
+     font-size: 15px;
+    }
+   }
