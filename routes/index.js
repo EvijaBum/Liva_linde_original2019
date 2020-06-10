@@ -36,9 +36,9 @@ var express             = require("express"),
         });
 
     // Landscapes
-        router.get("/landscapes", function(req, res){
-        res.render("landscapes"); 
-        });
+        // router.get("/landscapes", function(req, res){
+        // res.render("landscapes"); 
+        // });
     // People
     router.get("/travel", function(req, res){
         res.render("travel"); 
