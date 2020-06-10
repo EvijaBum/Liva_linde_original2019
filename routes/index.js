@@ -39,19 +39,19 @@ var express             = require("express"),
         // router.get("/landscapes", function(req, res){
         // res.render("landscapes"); 
         // });
-    // People
-    router.get("/travel", function(req, res){
-        res.render("travel"); 
-    });
-    // Portraits
-    router.get("/portraits", function(req, res){
-        res.render("portraits"); 
-    });
+    // // People
+    // router.get("/travel", function(req, res){
+    //     res.render("travel"); 
+    // });
+    // // Portraits
+    // router.get("/portraits", function(req, res){
+    //     res.render("portraits"); 
+    // });
 
-    // Sport
-    router.get("/sports", function(req, res){
-        res.render("sports"); 
-    });
+    // // Sport
+    // router.get("/sports", function(req, res){
+    //     res.render("sports"); 
+    // });
 
     // Wildlife
         router.get("/wildlife", function(req, res){
