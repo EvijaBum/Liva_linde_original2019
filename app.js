@@ -11,7 +11,6 @@ var express             = require("express"),
 
 var indexRoutes = require("./routes/index");
 
-
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(flash());
