@@ -1,11 +1,8 @@
 var express             = require("express"),
     app                 = express(),
-    session             = require('express-session'),
     bodyParser          = require("body-parser"),
-    mongoose            = require("mongoose"),
     exphbs              = require("express-handlebars"),
     passport            = require("passport"),
-    LocalStrategy       = require("passport-local"),
     flash               = require("connect-flash");
 
 
@@ -22,12 +19,6 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-
-app.use(require("express-session")({
-    secret: "Once again Rusty wins cutest dog!",
-    resave: false,
-    saveUninitialized: false
-}));
 
 app.use(passport.initialize());
 app.use(passport.session());

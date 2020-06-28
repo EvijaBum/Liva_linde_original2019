@@ -12,12 +12,12 @@ var express             = require("express"),
 
 // ABOUT SECTION
     router.get("/biography", function(req, res){
-    res.render("biography"); 
+        res.render("biography"); 
     });
 
 // PORTFOLIO SECTION
     router.get("/portfolio", function(req, res){
-    res.render("portfolio"); 
+        res.render("portfolio"); 
     }); 
 
     // Kids
@@ -31,27 +31,27 @@ var express             = require("express"),
         });
 
     // Weddings
-        router.get("/wedding", function(req, res){
+        router.get("/wedding", function(_req, res){
             res.render("wedding"); 
         });
 
     // Landscapes
-        // router.get("/landscapes", function(req, res){
-        // res.render("landscapes"); 
-        // });
+        router.get("/landscapes", function(_req, res){
+        res.render("landscapes"); 
+        });
     // // People
-    // router.get("/travel", function(req, res){
-    //     res.render("travel"); 
-    // });
+        router.get("/travel", function(_req, res){
+        res.render("travel"); 
+        });
     // // Portraits
-    // router.get("/portraits", function(req, res){
-    //     res.render("portraits"); 
-    // });
+        router.get("/portraits", function(req, res){
+            res.render("portraits"); 
+        });
 
     // // Sport
-    // router.get("/sports", function(req, res){
-    //     res.render("sports"); 
-    // });
+        router.get("/sports", function(req, res){
+            res.render("sports"); 
+        });
 
     // Wildlife
         router.get("/wildlife", function(req, res){
@@ -70,7 +70,7 @@ var express             = require("express"),
 
 // CONTACT SECTION
     router.get("/collaboration", function(req, res){
-    res.render("collaboration"); 
+        res.render("collaboration"); 
     });
 
 
