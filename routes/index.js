@@ -113,18 +113,18 @@ router.post("/collaboration/send", function(req, res) {
         html: '<h3>You have a new contact information with the following details...</h3><ul><li>Name: ' + req.body.name + ' </li><li>Email: ' + req.body.email + ' </li></ul><p>Message: <br/><br/>     ' + req.body.message + ' </p>'
     };
 
-     smtpTransport.sendMail(mailOptions, function(err, info){
-            if(err) {
-            req.flash("error", "Something went wrong");
-            console.log(err);
-            res.redirect("/collaboration");
-            } else {
-                req.flash("success", "Your e-mail has been sent!");
-                console.log('Message sent: %s', info.messageId);   
-                console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-                res.render('collaboration');
-            }
-    });
+    //  smtpTransport.sendMail(mailOptions, function(err, info){
+    //         if(err) {
+    //         req.flash("error", "Something went wrong");
+    //         console.log(err);
+    //         res.redirect("/collaboration");
+    //         } else {
+    //             req.flash("success", "Your e-mail has been sent!");
+    //             console.log('Message sent: %s', info.messageId);   
+    //             console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    //             res.render('collaboration');
+    //         }
+    // });
     
 }); 
 

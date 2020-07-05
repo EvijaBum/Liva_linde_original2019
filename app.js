@@ -2,7 +2,7 @@ var express             = require("express"),
     app                 = express(),
     bodyParser          = require("body-parser"),
     exphbs              = require("express-handlebars"),
-    passport            = require("passport"),
+    passport            = require("passport");
     flash               = require("connect-flash");
 
 
@@ -38,8 +38,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
   console.log("BUNNY JUMPS!");
-} else {
-  console.log ("Error")
 }
 
 app.listen(port);
