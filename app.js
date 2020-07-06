@@ -45,7 +45,7 @@ app.use("/", indexRoutes);
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 8080;
   console.log("BUNNY JUMPS!");
 }
 
