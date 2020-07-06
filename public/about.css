@@ -73,18 +73,17 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-           
             margin-left: 1.2em;
-            align-content: flex-end;
+            align-content: center;
           }
 
             #studies h3 {
               display: flex;
               color: rgb(241, 240, 236);
-              margin:20px 20px 20px 0;
+              margin:50px 30px 20px 0;
               font-family: 'Simonetta', cursive;
               display: flex;
-              justify-content: flex-end;
+              justify-content: center;
             }
           
           
@@ -104,7 +103,7 @@
                   border-radius: 5px;
                   align-self: baseline;
                  
-                  background: rgba(0, 0, 0, 0.335)
+                  background: rgba(0, 0, 0, 0.109)
                 }
 
 
@@ -140,7 +139,7 @@
                   
                       .education{
                          /* margin-top: 5%; */
-                         align-content: flex-start;
+                         align-content: center;
                          width: auto;
                          height: auto;
                          padding: 2,5%;
@@ -150,7 +149,8 @@
                           list-style-type: none;
                           padding: 2%;
                           margin: 0;
-                          border-radius: 5px;       padding: 2,5%;
+                          border-radius: 5px;       
+                          padding: 2,5%;
                           align-self: flex-start;
                           background: rgba(0, 0, 0, 0.3);
                    

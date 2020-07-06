@@ -1,5 +1,6 @@
 var express             = require("express"),
     app                 = express(),
+    session             = require('express-session'),
     bodyParser          = require("body-parser"),
     exphbs              = require("express-handlebars"),
     passport            = require("passport");
@@ -12,8 +13,16 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(flash());
 
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}))
+
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
+app.set('trust proxy', 1) // trust first proxy
 app.set("view engine", "ejs");
 
 
