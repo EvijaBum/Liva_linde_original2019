@@ -48,9 +48,6 @@
             align-self: center;
             font-family: 'Simonetta', cursive;
             padding: 25px;
-            border-radius: 4px;
-            margin: 0;
-            background-color:rgba(255, 255, 255, 0.671);
           }
 
           #paragraph p{
@@ -220,7 +217,7 @@
 
         /* ============ Contact=============== */
 
-        @media screen and (max-width: 900px){    
+        @media screen and (max-width: 930px){    
           .parallax1{
             background-position: right;
           }
@@ -232,6 +229,7 @@
             }
             #paragraph p{
                font-size: 20px;
+               color: rgba(255, 255, 255, 0.671);
             }
             .form {
               padding: 15px;
