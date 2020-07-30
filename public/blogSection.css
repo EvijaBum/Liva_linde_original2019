@@ -49,20 +49,26 @@
                     letter-spacing: 0.7px;
                   
                   }
-                  .imageBlog {
+                  .imageBlog,#except {
                     display: flex;
+                    /* background-color: grey; */
                     flex-wrap: wrap;
                     justify-content: center;
                     flex-direction: row;
                     
                   }
                       .blogSection div img{ 
+                        align-self: center;
                         margin: 10px;
                         height: 400px;
                         width: auto;
                         display: block;
+                        padding: 0;
                         }
-               
+                      #highertop {
+                        margin-top:45px;
+                      }
+
                    .nextpage{   
                      display: flex;
                      flex-direction: row;
