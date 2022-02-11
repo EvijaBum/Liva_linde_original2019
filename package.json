@@ -16,7 +16,7 @@
     "ejs": "^2.7.4",
     "ejs-promise": "^0.3.3",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.17.1",
     "install": "^0.13.0",
