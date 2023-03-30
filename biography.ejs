@@ -1,0 +1,130 @@
+ <% include partials/header %>
+
+ 
+ <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+            <img alt="Brand" style="max-width:120px;" src="/logo.png">
+        </a>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 	data-target="#bs-nav-demo" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+	<div class="collapse navbar-collapse" id="bs-nav-demo">
+
+		<div class="nav navbar-nav navbar-right">
+			<div>
+				<a href="/">HOME</a>
+			</div>
+			<div class="active">
+				<a href="/biography">BIOGRAPHY</a>
+			</div>
+
+			<!-- DROPDOWN MENU PORFOLIO -->
+
+			<button onclick="myFunction()" class="dropbtn">PORTFOLIO</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="/hospitality">Hospitality</a>
+				<a href="/wedding">Wedding</a>
+				<a href="/maternity">Maternity</a>
+				<a href="/sports">Sports</a>
+				<a href="/events">Events</a>
+				<a href="/brands">Brands</a>
+			</div>
+		   <!--ENDS DROPDOWN MENU-->
+			<div>
+				<a href="/roadjournal">BLOG</a>
+			</div> 
+			<div class="special"> 
+				<a href="/getintouch">GET IN TOUCH</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<body class="about parallax">	
+
+	<div class="container-fluid"> <!-- CONTAINS ALL BODY -->
+
+			<section class="intro">
+					<div class="pads">
+						<h2 class="caps">PHOTOGRAPHER</h2>
+
+							<p> whose main working areas are outdoor environment, mountains and travels. 
+								The pulse of the mountain world is her motivation, inspiration and meaning of life. 
+								Has a strong focus on natural light, creative angles, colours and details. 
+								She is always searching for an energy behind every person, event, land or culture. 
+
+							</p>
+					</div>
+			
+					<div class="pads">
+						<h2 class="caps">EXPLORER</h2>
+
+							<p> who is moved by long treks and mountain expeditions. She takes every chance to spend time outdoors, 
+								discovering new slopes and sights, and seeing the beauty in small things. She strongly believes that nature
+								 has a rewarding effect on the human mind and body. All we need to do is to go outside and explore it with all
+								  our senses.
+							</p>
+					</div>
+
+					<div class="pads">
+						 <h2 class="caps">WRITER</h2>
+
+							<p> who loves to write in a personal and detailed style with the purpose of both to entertain and to inform.  
+								Aims to see everything in a broader context, put meaning to things  and do it with a philosophical touch. 
+								Her creativity and enthusiasm results in authentic stories that bring you closer to any person or area of the world.
+							</p>
+					</div>
+						
+						
+					
+				</section>
+			</main>
+
+		
+			
+			<section class="education">
+				<div id="studies">
+					<h3>Workshops | Studies</h3>
+				</div>
+				<ul id="small">	
+						<li>
+							<h4>Alex Strohl</h4>
+							<p>Adventure photography | 2020, online</p>
+						</li>
+
+						<li>
+							<h4>Swiss Photo Club</h4>
+							<p>Wildlife and travel photography | 2019, Namibia </p>
+						</li>
+						<li>
+							<h4>Alex Webb & Rebecca Norris Webb</h4>
+							<p>Street photography | 2017, Rome</p>
+						</li>	
+						<li>
+							<h4>British College of Journalism</h4>
+							<p>Travel Journalism | 2019 - 2020, online</p> 
+						</li>
+						<li>
+							<h4>The New York Institute of Photography</h4>
+							<p>2016 - 2018, online</p>
+						</li>
+						<li>
+							<h4>Visual communication</h4>
+							<p>PR studies | 2006 - 2010, Riga</p>
+						</li>
+				</ul>
+			
+			</section>
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Up</button> 
+	</div> <!-- END OF CONTAINER-->
+
+
+<% include partials/footer %>
